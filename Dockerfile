@@ -1,14 +1,13 @@
-FROM ubuntu:disco-20200114
+FROM ubuntu:xenial-20200807
 
 # minimal (ish) C build deps
-RUN apt-get -y update && apt-get -y install \
+RUN apt-get update && apt-get install -y \
     autoconf \
-    build-essentials \
+    build-essential \
     curl \
     g++-multilib \
     gcc-multilib \
     git \
-    install \
     libtool \
     vim \
     zip
